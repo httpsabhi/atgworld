@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.main-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F9FA;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+  height: 542px;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 24px;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  padding-top: 42px;
+  gap: 16px;
+}
+
+.title p {
+  color: #08090a;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px 40px 0 40px;
+  gap: 40px;
+}
+
+.dash-card {
+  width: 360px;
+  height: 175px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 29px 16px 24px 16px;
+  overflow: hidden;
+}
+
+.dash-title {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  color: #08090a;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.border1 {
+  border: 2px solid #8064a2;
+}
+.border2 {
+  border: 2px solid #77933C;
+}
+.border3 {
+  border: 2px solid #C0504D;
+}
+.border4 {
+  border: 2px solid #0096C8;
+}
+
+.dash-desc {
+  color: #08090a;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 29px;
+}

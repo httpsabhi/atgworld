@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATG World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="desktop-nav">
+        <div class="logo">
+          <img class="logo-img" src="assets/logo.png" alt="" />
+        </div>
+        <div class="search-box">
+          <input
+            class="search"
+            type="search"
+            placeholder="Search here..."
+            aria-label="Search"
+          />
+          <div class="search-icon">
+            <img src="assets/icon-search.svg" alt="" />
+          </div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <img src="assets/Explore.svg" alt="" />
+              <span>Explore</span>
+              <img src="assets/expand-arrow.svg" alt="" />
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="20"
+                viewBox="0 0 18 20"
+                fill="none"
+              >
+                <path
+                  d="M9 0.5L17.2272 5.25V14.75L9 19.5L0.772758 14.75V5.25L9 0.5Z"
+                  fill="#8064A2"
+                />
+              </svg>
+              <svg
+                class="star"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="11"
+                viewBox="0 0 10 11"
+                fill="none"
+              >
+                <path
+                  d="M4.62056 1.13723C4.74219 0.772694 5.25781 0.772694 5.37944 1.13723L6.28143 3.84062C6.33554 4.0028 6.48675 4.11266 6.65771 4.11401L9.50752 4.13645C9.8918 4.13948 10.0511 4.62987 9.74202 4.85819L7.44968 6.55142C7.31215 6.653 7.2544 6.83076 7.30595 6.99377L8.16524 9.71104C8.28111 10.0774 7.86396 10.3805 7.55129 10.1571L5.23256 8.50018C5.09345 8.40078 4.90655 8.40078 4.76744 8.50018L2.44871 10.1571C2.13604 10.3805 1.71889 10.0774 1.83476 9.71104L2.69405 6.99377C2.7456 6.83076 2.68785 6.653 2.55032 6.55142L0.257977 4.85819C-0.0511303 4.62987 0.108204 4.13948 0.492481 4.13645L3.34229 4.11401C3.51325 4.11266 3.66446 4.0028 3.71857 3.84062L4.62056 1.13723Z"
+                  fill="white"
+                />
+              </svg>
+              <span>Hobbies</span>
+              <img src="assets/expand-arrow.svg" alt="" />
+            </li>
+            <li>
+              <img src="assets/bookmark.svg" alt="" />
+            </li>
+            <li>
+              <img src="assets/notification.svg" alt="" />
+            </li>
+            <li>
+              <img src="assets/Product.svg" alt="" />
+            </li>
+            <li>
+              <button class="signin-btn"><a href="/dashboard.html">Sign In</a></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav">
+        <div class="logo">
+          <img class="logo-img" src="assets/logo.png" alt="" />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <img src="assets/search-icon.svg" alt="" />
+            </li>
+            <li>
+              <img src="assets/notification.svg" alt="" />
+            </li>
+            <li>
+              <img src="assets/menu.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="home-left">
+          <h1>
+            Explore your <span class="hobby">hobby</span> or
+            <span class="passion">passion</span>
+          </h1>
+          <p>
+            Sign-in to interact with a community of fellow hobbyists and an
+            eco-system of experts, teachers, suppliers, classes, workshops, and
+            places to practice, participate or perform.
+            <span class="hide-text"
+              >Your hobby may be about visual or performing arts, sports, games,
+              gardening, model making, cooking, indoor or outdoor
+              activities…</span
+            >
+          </p>
+          <p class="hide-text">
+            If you are an expert or a seller, you can Add your Listing and
+            promote yourself, your students, products, services or events. Hop
+            on your hobbyhorse and enjoy the ride.
+          </p>
+          <div class="home-img hide">
+            <img src="assets/home1.png" alt="" />
+            <img src="assets/home2.png" alt="" />
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="header">
+            <span id="signin-color" onclick="SignIn()">Sign In</span>
+            <span id="joinin-color" onclick="JoinIn()">Join In</span>
+            <div id="active-line"></div>
+          </div>
+          <div class="hide">
+            <div class="third-party-signin">
+              <img src="assets/google.svg" alt="" />
+              <span>Continue with Google</span>
+            </div>
+            <div class="third-party-signin">
+              <img src="assets/facebook.svg" alt="" />
+              <span>Continue with Facebook</span>
+            </div>
+            <div class="seperation">
+              <div class="line"></div>
+              <span>Or connect with</span>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <!-- Sign In -->
+          <div class="form" id="signin">
+            <form action="/" class="form-control">
+              <div class="spacing">
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="pass spacing">
+                <input type="password" placeholder="Password" />
+                <img src="assets/Password.svg" alt="" />
+              </div>
+              <div class="remember">
+                <div class="rem-item">
+                  <input type="checkbox" name="" id="" />
+                  <p>Remember me</p>
+                </div>
+                <div class="rem-item">
+                  <img src="assets/lock.svg" alt="" />
+                  <p>Forgot password?</p>
+                </div>
+              </div>
+              <button type="submit" class="form-btn">Continue</button>
+            </form>
+          </div>
+
+          <!-- Join In -->
+          <div class="form" id="joinin">
+            <form action="/" class="form-control" id="form-control">
+              <div class="spacing">
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="pass">
+                <input type="password" placeholder="Password" />
+                <img src="assets/show_pass.svg" alt="" />
+              </div>
+              <div class="strength">
+                <div class="bar">
+                  <div class="strenth-bar"></div>
+                  <div class="strenth-bar"></div>
+                  <div class="strenth-bar"></div>
+                </div>
+                <div class="bar-text">
+                  <p>Password strength</p>
+                </div>
+              </div>
+              <div class="terms">
+                <p>
+                  By continuing, you agree to our
+                  <span>Terms of Service</span> and <span>Privacy Policy</span>.
+                </p>
+              </div>
+              <button type="submit" class="joinin-btn">
+                Agree and Continue
+              </button>
+            </form>
+          </div>
+
+          <!-- Mobile View -->
+          <div class="mobile-view">
+            <div class="seperation">
+              <div class="line"></div>
+              <span>Or connect with</span>
+              <div class="line"></div>
+            </div>
+            <div class="third-party-signin">
+              <img src="assets/google.svg" alt="" />
+              <span>Continue with Google</span>
+            </div>
+            <div class="third-party-signin">
+              <img src="assets/facebook.svg" alt="" />
+              <span>Continue with Facebook</span>
+            </div>
+          </div>      
+        </div>
+        <div class="mobile-view">
+          <div class="home-img mobile-home-image">
+            <img src="assets/home1.png" alt="" />
+            <img src="assets/home2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="card-container">
+          <div class="card">
+            <div class="title">
+              <img src="assets/group.svg" alt="" />
+              <p>People</p>
+            </div>
+            <div class="desc">
+              <p>
+                Find a teacher, coach, or expert for your hobby interest in your
+                locality. Find a partner, teammate, accompanist or collaborator.
+              </p>
+            </div>
+            <div class="card-btn">
+              <button class="buttons">Connect</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <img src="assets/place.svg" alt="" />
+              <p>Place</p>
+            </div>
+            <div class="desc">
+              <p>
+                Find a class, school, playground, auditorium, studio, shop or an
+                event venue. Book a slot at venues that allow booking through
+                hobbycue.
+              </p>
+            </div>
+            <div class="card-btn">
+              <button class="buttons">Meet up</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <img src="assets/shopping.svg" alt="" />
+              <p>Product</p>
+            </div>
+            <div class="desc">
+              <p>
+                Find equipment or supplies required for your hobby. Buy, rent or
+                borrow from shops, online stores or from community members.
+              </p>
+            </div>
+            <div class="card-btn">
+              <button class="buttons">Get it</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <img src="assets/event.svg" alt="" />
+              <p>Event</p>
+            </div>
+            <div class="desc">
+              <p>
+                Find events, meetups and workshops related to your hobby.
+                Register or buy tickets online.
+              </p>
+            </div>
+            <div class="card-btn">
+              <button class="buttons">Attend</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="add">
+          <div class="title">
+            <img src="assets/add.svg" alt="" />
+            <p>Add your own</p>
+          </div>
+          <div class="add-desc">
+            <p>
+              Are you a teacher or expert? Do you sell or rent out equipment,
+              venue or event tickets? Or, you know someone who should be on
+              hobbycue? Go ahead and Add your Own page
+            </p>
+          </div>
+          <div class="add-btn">
+            <button class="buttons">Add new</button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="testimonials">
+          <div class="test-title">
+            <img src="assets/quote.svg" alt="" />
+            <p>Testimonials</p>
+          </div>
+          <div class="test-desc">
+            <p>
+              In a fast growing and ever changing city like Bangalore, it
+              sometimes becomes very difficult to find or connect with like
+              minded people. Websites like hobbycue.com is a great service which
+              helps me get in touch with, communicate, connect, and exchange
+              ideas with other dancers. It also provides the extra benefit of
+              finding products and services that I can avail, which I can be
+              assured is going to be of great quality as it comes recommended by
+              people of the hobbycue community. To have discussions, to get
+              visibility, and to be able to safely explore various hobbies and
+              activities in my city, all under one roof, is an excellent idea
+              and I highly recommend it.
+            </p>
+          </div>
+          <div class="play">
+            <div class="player">
+              <div class="play-btn">
+                <img src="assets/play.svg" alt="" />
+              </div>
+              <div class="slider">
+                <div class="cursor"></div>
+                <div class="slide"></div>
+              </div>
+              <div class="timestamp">
+                <p>0:00</p>
+              </div>
+              <div class="user">
+                <img class="mic" src="assets/mic.svg" alt="" />
+                <img class="person" src="assets/person.png" alt="" />
+              </div>
+            </div>
+            <div class="user-card">
+              <img src="assets/person.png" class="person-card" alt="" />
+              <div class="user-detail">
+                <h2>Shubha Nagarajan</h2>
+                <p>Classical Dancer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="title-5">
+          <h3>
+            Your <span class="passion">Hobby</span>, Your
+            <span class="hobby">Community...</span>
+          </h3>
+        </div>
+        <button class="btn-5">Get started</button>
+        <div class="scroll-up-btn" id="scrollUpBtn">
+          <img src="assets/arrow-up.svg" alt="Scroll Up" />
+        </div>
+        <div class="scroll-caption">
+          <p>Go to top (Ctrl+Home)</p>
+        </div>
+        <div class="foot-image">
+          <img src="assets/foot1.png" alt="" />
+          <img src="assets/foot2.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="foot-links">
+        <div class="links">
+          <div class="foot-title">
+            <p class="link-title">Hobbycue</p>
+            <img src="assets/arrow-up.svg" alt="" />
+          </div>
+          <ul>
+            <li>About Us</li>
+            <li>Our Services</li>
+            <li>Work with Us</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="links">
+          <div class="foot-title">
+            <p class="link-title">How Do I</p>
+            <img src="assets/arrow-up.svg" alt="" />
+          </div>
+          <ul>
+            <li>Sign Up</li>
+            <li>Add a Listing</li>
+            <li>Claim Listing</li>
+            <li>Post a Query</li>
+            <li>Add a Blog Post</li>
+            <li>Other Queries</li>
+          </ul>
+        </div>
+        <div class="links">
+          <div class="foot-title">
+            <p class="link-title">Quick Links</p>
+            <img src="assets/arrow-up.svg" alt="" />
+          </div>
+          <ul>
+            <li>Listings</li>
+            <li>Blog Posts</li>
+            <li>Shop / Store</li>
+            <li>Community</li>
+          </ul>
+        </div>
+        <div class="links">
+          <p class="link-title">Social Media</p>
+          <div class="social-icon">
+            <div class="circle">
+              <img src="assets/facebook-icon.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/twitter.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/instagram.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/pintrest.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/googleplus.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/youtube.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/telegram.svg" alt="" />
+            </div>
+            <div class="circle">
+              <img src="assets/email.svg" alt="" />
+            </div>
+          </div>
+          <p class="link-title invite">Invite Friends</p>
+          <div class="invite-form">
+            <input class="invite-input" type="email" placeholder="Email ID" />
+            <button class="invite-btn">Invite</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Purple Cues Private Limited</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
