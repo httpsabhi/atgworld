@@ -9,12 +9,13 @@
 
 /* Navbar */
 .desktop-nav {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   background: #fff;
   box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
+  padding: 0 6.5vw;
 }
 
 .mobile-nav {
@@ -27,15 +28,14 @@
 }
 
 .logo-img {
-  width: 18.32863rem;
-  height: 3.75rem;
+  width: 293.258px;
+  height: 60px;
   flex-shrink: 0;
-  margin-left: 97px;
 }
 
 .search-box {
   display: flex;
-  margin-left: 34.74px;
+  margin-left: 2.5vw;
 }
 
 .search-box .search {
@@ -109,7 +109,7 @@
   cursor: pointer;
 }
 
-.signin-btn a{
+.signin-btn a {
   text-decoration: none;
 }
 
@@ -365,12 +365,11 @@
 #section2 {
   background: #fff;
   width: 100%;
-  height: 818px;
 }
 
 .card-container {
   display: flex;
-  padding: 100px;
+  padding: 48px 24px 0 24px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
@@ -438,7 +437,7 @@
 #section3 {
   display: flex;
   width: 100%;
-  height: 530px;
+  /* height: 530px; */
   padding: 100px;
   justify-content: center;
   align-items: center;
@@ -840,7 +839,7 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 490px) {
   /* Navbar */
   .desktop-nav {
     display: none;
@@ -1041,7 +1040,7 @@
     line-height: 1.25rem; /* 142.857% */
   }
 
-  .foot-image{
+  .foot-image {
     margin-top: 53.28px;
     gap: 17.87px;
   }
@@ -1049,5 +1048,49 @@
   .foot-image img {
     width: 133.629px;
     height: 70.464px;
+  }
+
+  /* Section 2 */
+  .card-container {
+    padding: 48px 24px 48px 24px;
+  }
+
+  .card {
+    padding: 26px 24px 24px 24px;
+    height: 216px;
+  }
+
+  .card .title {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .title img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card .title p {
+    font-size: 1.125rem;
+  }
+
+  .card .desc {
+    padding-top: 15px;
+  }
+
+  .card .desc p {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem; /* 166.667% */
+    letter-spacing: 0.015rem;
+  }
+
+  .card .card-btn {
+    padding-top: 12px;
+  }
+
+  .buttons {
+    height: 32px;
+    width: 100%;
   }
 }
